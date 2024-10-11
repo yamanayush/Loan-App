@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const dbConnect = async () => {
   try {
-    await mongoose.connect('mongodb+srv://yamanayush27204:<db_password>@yamanloandatabase.m41by.mongodb.net/?retryWrites=true&w=majority&appName=YamanLoanDatabase', {});
+    await mongoose.connect(process.env.MONGO_URL, {});
     console.log('DB connected successfully');
   } catch (error) {
     console.error('DB connection error:', error.message);
