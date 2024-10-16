@@ -14,9 +14,9 @@ const GlobalContextProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userType, setUserType] = useState(false);
 
-  // const PORT = 4000
-  const PORT_Url = `https://mini-loan-app-bkd.vercel.app/api`;
-  // const PORT_Url = `http://localhost:${PORT}/api`
+  // const PORT_Url = 4000
+  const PORT_Url = 'https://loan-app-server-q2jf.onrender.com/api';
+  // const PORT_Url = `http://localhost:${4000}/api`
 
   const logInApi = `${PORT_Url}/user/signin`;
   const signUpApi = `${PORT_Url}/user/signup`;
